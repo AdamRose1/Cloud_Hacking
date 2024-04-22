@@ -22,6 +22,7 @@ Step 5: Opening the secret shows we have passed level 1:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/b7e04f81-e1c7-4948-a4de-801d56fd5d6a)
 
+---
 <h1>Level 2 target: http://level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud/ </h1>
 
 Step 1: Run nslookup on level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud <br>
@@ -49,6 +50,8 @@ aws --profile testing s3 cp s3://level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.c
 Step 6: Opening the secret shows we have passed level 2:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/bc2e0600-2dfe-47d3-859f-cf256cac555d)
+
+---
 
 <h1>Level 3 target: http://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud</h1>
 

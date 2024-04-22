@@ -106,7 +106,7 @@ Step 3: Mount this snapshot on our own ec2 instance to see the snapshot data.  T
 
 Next, create an ec2 instance on our user and attach this volume to that ec2. <br>
 
-Next, ssh into the ec2 instance, run lsblk to find the attached volume, and then mount the volume by running: sudo mount /dev/xvda /mnt 
+Next, ssh into the ec2 instance we created, run the command 'lsblk' to find the attached volume, and then mount the volume by running: sudo mount /dev/xvda /mnt 
 
 Step 4: Go to /mnt and look around for credentials.  Checking in /home/ubuntu/.bash_history shows a username and password of  flaws:nCP8xigdjpjyiXgJ7nJu7rw5Ro68iE8M
 

@@ -1,6 +1,6 @@
-<h1>All 6 challenges/levels for this lab can be found at http://flaws.cloud</h1>
+<h1>All 6 challenges for this lab can be found at http://flaws.cloud</h1>
 
-<h1>Level 1 target: flaws.cloud</h1>
+<h2>Level 1 target: flaws.cloud</h2>
 
 Step 1: Run nslookup flaws.cloud<br>
 This returns 52.92.154.227.  

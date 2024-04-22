@@ -3,10 +3,10 @@
 <h3>Level 1 target: flaws.cloud</h3>
 
 Step 1: Run nslookup flaws.cloud<br>
-This returns 52.92.154.227.  
+This returns 52.92.154.227
 
-Step 2: Run nslookup on 52.92.154.227.  <br>
-This returns s3-website-us-west-2.amazonaws.com.
+Step 2: Run nslookup on 52.92.154.227  <br>
+This returns s3-website-us-west-2.amazonaws.com
 
 Step 3: Now that we know that our target is a s3 bucket, let’s check for anonymous access: <br>
 aws s3 ls s3://flaws.cloud --no-sign-request

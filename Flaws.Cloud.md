@@ -1,7 +1,5 @@
 <h1>All levels for this lab can be found at http://flaws.cloud</h1>
 
----
-
 <h1>Level 1 target: flaws.cloud</h1>
 
 Step 1: Run nslookup flaws.cloud<br>
@@ -89,6 +87,8 @@ This returned a number of s3 buckets.
 
 Step 8: Navigate to level 4 by visiting http://level4-1156739cfb264ced6de514971a4bef68.flaws.cloud 
 
+---
+
 <h1>Level 4 target: http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud </h1>
 
 Step 1: Navigating to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/ requires a username and password.  Since we are told that the target is an ec2 instance, let’s check if it has any snapshots: aws --profile testing2 ec2 describe-snapshots <br>
@@ -106,6 +106,7 @@ Step 4: Go to /mnt and look around for credentials.  Checking in /home/ubuntu/.b
 
 Step 5: Use these credentials to login to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud
 
+---
 <h1>Level 5 target: http://level6-cc4c404a8a8b876167f5e70a7d8c9880.flaws.cloud/</h1>
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/38a641ab-e076-48cd-9552-718cbedebd84)
@@ -129,7 +130,8 @@ Step 4: Download the bucket: aws --profile testing3 s3 sync s3://level6-cc4c404a
 
 Step 5: Opening the downloaded file shows the next level
 
-Level 6 target:
+---
+Level 6:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/2b504753-3e24-43bc-b2a2-5ffb0befc0f4)
 

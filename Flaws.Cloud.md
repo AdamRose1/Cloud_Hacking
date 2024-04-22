@@ -23,7 +23,7 @@ Step 5: Opening the secret shows we have passed level 1:
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/b7e04f81-e1c7-4948-a4de-801d56fd5d6a)
 
 ---
-<h1>Level 2 target: http://level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud/ </h1>
+<h3>Level 2 target: http://level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud/ </h3>
 
 Step 1: Run nslookup on level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud <br>
 This returns 52.92.200.145 <br>
@@ -53,7 +53,7 @@ Step 6: Opening the secret shows we have passed level 2:
 
 ---
 
-<h1>Level 3 target: http://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud</h1>
+<h3>Level 3 target: http://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud</h3>
 
 Step 1: Run nslookup on level3-9afd3927f195e10225021a578e6f78df.flaws.cloud <br>
 This returns 52.92.242.211
@@ -89,7 +89,7 @@ Step 8: Navigate to level 4 by visiting http://level4-1156739cfb264ced6de514971a
 
 ---
 
-<h1>Level 4 target: http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud </h1>
+<h3>Level 4 target: http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud </h3>
 
 Step 1: Navigating to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/ requires a username and password.  Since we are told that the target is an ec2 instance, let’s check if it has any snapshots: aws --profile testing2 ec2 describe-snapshots <br>
 This returned a lot of snapshots, so pipe the output into a file.  
@@ -107,7 +107,7 @@ Step 4: Go to /mnt and look around for credentials.  Checking in /home/ubuntu/.b
 Step 5: Use these credentials to login to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud
 
 ---
-<h1>Level 5 target: http://level6-cc4c404a8a8b876167f5e70a7d8c9880.flaws.cloud/</h1>
+<h3>Level 5 target: http://level6-cc4c404a8a8b876167f5e70a7d8c9880.flaws.cloud/</h3>
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/38a641ab-e076-48cd-9552-718cbedebd84)
 

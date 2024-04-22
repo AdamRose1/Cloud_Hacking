@@ -131,7 +131,7 @@ Step 4: Download the bucket: aws --profile testing3 s3 sync s3://level6-cc4c404a
 Step 5: Opening the downloaded file shows the next level
 
 ---
-Level 6 Target: See description below.
+<h3>Level 6 Target: See description below.</h3>
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/2b504753-3e24-43bc-b2a2-5ffb0befc0f4)
 

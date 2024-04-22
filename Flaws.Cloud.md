@@ -102,7 +102,7 @@ That should find a snapshot of "snap-0b49342abd1bdcb89" (unfortunately there is 
 
 Step 3: Mount this snapshot on our own ec2 instance to see the snapshot data.  To do this, first create a new volume on our own user (to do this we can use the aws free account we created earlier): aws --profile testing ec2 create-volume --snapshot-id snap-0b49342abd1bdcb89 --availability-zone us-west-2a --region us-west-2  
 
-*Need to guess the correct region until the command works, there aren’t that many US regions so it doesn't take long to guess the correct region
+*Need to guess the correct region until the command works, there aren’t that many US regions so it doesn't take long to guess the correct region.
 
 Next, create an ec2 instance on our user and attach this volume to that ec2. <br>
 

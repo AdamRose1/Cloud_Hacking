@@ -100,9 +100,12 @@ This returned a lot of snapshots, so pipe the output into a file.
 Step 2:  Check for backups with: grep -i backup file.txt <br>
 That should find a snapshot of "snap-0b49342abd1bdcb89" (unfortunately there is currently an issue where this snapshot is not in the output to the describe-snapshots command).
 
-Step 3: Mount this snapshot on our own ec2 instance to see the snapshot data.  To do this, first create a new volume on our own user (to do this we can use the aws free account we created earlier): aws --profile testing ec2 create-volume --snapshot-id snap-0b49342abd1bdcb89 --availability-zone us-west-2a --region us-west-2  <br>
-*Need to guess the correct region until the command works, there aren’t that many us regions so it’s not too long to guess this right.  <br>
+Step 3: Mount this snapshot on our own ec2 instance to see the snapshot data.  To do this, first create a new volume on our own user (to do this we can use the aws free account we created earlier): aws --profile testing ec2 create-volume --snapshot-id snap-0b49342abd1bdcb89 --availability-zone us-west-2a --region us-west-2  
+
+*Need to guess the correct region until the command works, there aren’t that many US regions so it doesn't take long to guess the correct region
+
 Next, create an ec2 instance on our user and attach this volume to that ec2. <br>
+
 Next, ssh into the ec2 instance, run lsblk to find the attached volume, and then mount the volume by running: sudo mount /dev/xvda /mnt 
 
 Step 4: Go to /mnt and look around for credentials.  Checking in /home/ubuntu/.bash_history shows a username and password of  flaws:nCP8xigdjpjyiXgJ7nJu7rw5Ro68iE8M

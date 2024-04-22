@@ -61,8 +61,7 @@ This returns 52.92.242.211
 Step 2: Run nlookup on 52.92.242.211 <br>
 This returns s3-website-us-west-2.amazonaws.com
 
-Step 3: Now that we know that our target is a s3 bucket we can test the misconfigurations in level 1 and level 2.  Test for anonymous access to this bucket by running: <br>
-aws s3 ls s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud <br>
+Step 3: Now that we know that our target is a s3 bucket we can test the misconfigurations in level 1 and level 2.  Test for anonymous access to this bucket by running: <br> aws s3 ls s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud <br>
 This returns a listing of the s3 bucket:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/ba82ba6c-5bb6-48ec-824f-c1231691c80d)

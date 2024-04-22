@@ -156,7 +156,7 @@ A quick google search for ‘aws how to invoke api’ shows the information we n
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/23e4b360-ecbc-4cc5-8bd0-5836e8464a7c)
 
-Step 6: At this point we still can’t do much with this information, so we will check if there are any lambda functions associated to this user: aws --profile testing4 lambda list-functions
+Step 6: At this point we still can’t do much with this information, so we will check if there are any lambda functions associated to this user that are using this api: aws --profile testing4 lambda list-functions
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/06ce87d5-1105-459a-9f14-85d13ad60dcc)
 

@@ -90,7 +90,11 @@ Step 8: Navigate to level 4 by visiting http://level4-1156739cfb264ced6de514971a
 
 <h3>Level 4 target: http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud </h3>
 
-Step 1: Navigating to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/ requires a username and password.  Since we are told that the target is an ec2 instance, let’s check if it has any snapshots: aws --profile testing2 ec2 describe-snapshots <br>
+Step 1: Navigating to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/ requires a username and password.  
+
+![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/b1c2575d-3b3b-4bee-8b14-2c88b39612e6)
+
+Since we are told that the target is an ec2 instance, let’s check if it has any snapshots: aws --profile testing2 ec2 describe-snapshots <br>
 This returned a lot of snapshots, so pipe the output into a file.  
 
 Step 2:  Check for backups with: grep -i backup file.txt <br>

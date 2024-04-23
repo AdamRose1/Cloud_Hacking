@@ -142,7 +142,7 @@ Step 4: Download the bucket directory: aws --profile testing3 s3 sync s3://level
 Step 5: Opening the downloaded file inside this directory completes level 5.
 
 ---
-<h3>Level 6 Target: See description below</h3>
+<h3>Level 6 Target</h3>
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/2b504753-3e24-43bc-b2a2-5ffb0befc0f4)
 

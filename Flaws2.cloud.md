@@ -64,6 +64,7 @@ Step 6: Visiting the long url shown downloads a file.  Searching through the fil
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/5e01336c-e8dc-4f59-9341-704d7cfb2e0f)
 
 Step 7: Use those credentials to login to http://container.target.flaws2.cloud which completes level 2.  
+
 ---
 <h3>Level 3 Target: </h3>
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/1d1bf7f8-33d8-4170-a2ef-7ada181f2eef)

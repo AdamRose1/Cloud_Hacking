@@ -67,6 +67,7 @@ Step 7: Use those credentials to login to http://container.target.flaws2.cloud w
 
 ---
 <h3>Level 3 Target: </h3>
+
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/1d1bf7f8-33d8-4170-a2ef-7ada181f2eef)
 
 Step 1: Seems like the container webserver directs the site to whatever is given after /proxy/.  Based on this, try to access local files: http://container.target.flaws2.cloud/proxy/file:///proc/self/environ 

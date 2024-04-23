@@ -4,7 +4,7 @@
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/a39cf547-d5f9-43ae-8101-e4cf632d9398)
 
-Step 1: Often developers will dump environmental variables when error conditions occur in order to help them debug problems.  To test if this occurs here we will capture the ‘Submit’ request in burp suite and change it to a non-number value (since the website only allows numbers to be submitted).  This will cause an error that leaks aws credentials:
+Step 1: Often developers will dump environmental variables when error conditions occur in order to help them debug problems.  To test if this occurs here we will capture the ‘Submit’ request in burp suite and change it to a non-number value (since client side only allows numbers to be submitted).  This will cause an error that leaks aws credentials:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/2db0f698-f866-40f7-bdda-7c565ead2244)
 

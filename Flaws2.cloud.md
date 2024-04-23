@@ -55,7 +55,7 @@ This has a bunch of different digests.  One of the digests in the output is show
 
 Step 5: Check each one of the digests with the following command (replace --layer-digest value with the different digest values): aws --profile flawscloud ecr get-download-url-for-layer --repository-name level2 --registry-id 653711331788 --layer-digest "sha256:2d73de35b78103fa305bd941424443d520524a050b1e0c78c488646c0f0a0621”
 
-The output for this shows a url.  
+The output for this digest shows a url.  
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/98559782-b928-430a-968e-f8fa0098d7f6)
 

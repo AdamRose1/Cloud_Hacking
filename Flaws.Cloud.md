@@ -184,6 +184,7 @@ Step 7: Check the details for this lambda function: aws --profile testing4 lambd
 
 The line showing “arn:aws:execute-api:us-west-2:975426262029:s33ppypa75/*/GET/level6” is a pattern for API Gateway ARNs, where “s33ppypa75” is the API Gateway API ID and “GET/level6” specifies the HTTP method (GET) and resource path (/level6). <br>
 The only missing piece for invoking the api is the stage name.  
+
 Step 8: To get the stage name: aws --profile testing4 apigateway get-stages --rest-api-id "s33ppypa75"
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/1ada36b4-4cd9-4b39-8c4b-7eaacbac82f2)

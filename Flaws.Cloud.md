@@ -122,11 +122,11 @@ Step 5: Use these credentials to login to http://4d0cf09b9b2d761a7d87be99d17507b
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/38a641ab-e076-48cd-9552-718cbedebd84)
 
-Step 1: If you can make any sort of HTTP request from an EC2 to an IP of 169.254.169.254, you'll likely get back information the owner would prefer you not see.  Check this by navigating to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/proxy/169.254.169.254/latest/meta-data/iam/security-credentials/flaws/ 
+Step 1: If you can make any sort of HTTP request from an EC2 to an IP of 169.254.169.254, you'll likely get back information the owner would prefer you not see.  169.254.169.254 is a well known IP in the cloud world, in AWS it used to retrieve user data and instance metadata specific to an instance.  Check this by navigating to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/proxy/169.254.169.254/latest/meta-data/iam/security-credentials/flaws/ 
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/8b41282c-c144-4929-9220-c9d5dca7c5b2)
 
-This url shows an accesskeyid and a secretaccesskey.  169.254.169.254 is a known url for 
+This url shows an accesskeyid and a secretaccesskey. 
 
 Step 2: Configure a user profile with these keys: aws configure --profile testing3 <br>
 When prompted, enter the access keys and then manually enter into ~/.aws/credentials into testing3 the aws_session_token (that’s the ‘Token’ value).  

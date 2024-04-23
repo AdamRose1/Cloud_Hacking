@@ -113,7 +113,7 @@ Next, create an ec2 instance on our free aws user account and attach this volume
 
 Next, ssh into the ec2 instance we created, run the command 'lsblk' to find the attached volume, and then mount the volume by running: sudo mount /dev/xvda /mnt 
 
-Step 4: Go to /mnt and look around for credentials.  Checking in /home/ubuntu/.bash_history shows a username and password of flaws:nCP8xigdjpjyiXgJ7nJu7rw5Ro68iE8M
+Step 4: Go to /mnt and look around for credentials.  Checking in /home/ubuntu/.bash_history shows a username and password of: flaws:nCP8xigdjpjyiXgJ7nJu7rw5Ro68iE8M
 
 Step 5: Use these credentials to login to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud
 

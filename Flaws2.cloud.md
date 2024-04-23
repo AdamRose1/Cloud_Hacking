@@ -21,7 +21,7 @@ This returns 52.217.139.141
 Step 5: Run the command: nslookup 52.217.139.141 <br>
 This returns s3-website-us-east-1.amazonaws.com  
 
-Step 6: Now that we know this is a s3 bucket, let’s try to list the s3 bucket: aws --profile flawscloud s3 ls s3://level1.flaws2.cloud  
+Step 6: Now that we know this is a s3 bucket, let’s check if we can list the s3 bucket for this user: aws --profile flawscloud s3 ls s3://level1.flaws2.cloud  
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/1c463ab7-c7c9-4704-bad6-7d11db1756b7)
 

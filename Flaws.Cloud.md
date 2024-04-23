@@ -148,7 +148,7 @@ Step 5: Opening the downloaded file inside this directory completes level 5.
 
 Step 1: Configure a new profile with these access keys.  Since we have previously seen the target use the region of us-west-2, when we configure the user we will set this same region for the user.  
 
-Step 2: Find out who you are: aws --profile testing4 iam get-user
+Step 2: Find out who this user is: aws --profile testing4 iam get-user
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/35843a38-cb73-47dd-9742-025427f6b52b)
 

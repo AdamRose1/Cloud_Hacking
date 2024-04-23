@@ -198,6 +198,7 @@ Step 9: Now that we have all the data we need to invoke the api, let’s put it 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/d46c6ebb-6089-4093-ae24-446f9fc195dd)
 
 Step 10: Visit the url the api shows: http://theend-797237e8ada164bf9f12cebf93b282cf.flaws.cloud/d730aa2b 
+
 Visiting this url solves level6:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/dd4947e2-4a3f-4d72-8cee-f82c2760ff90)

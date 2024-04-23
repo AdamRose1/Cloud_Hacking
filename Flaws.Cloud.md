@@ -137,9 +137,9 @@ Step 3: Check if can use this profile to list the s3 bucket: aws --profile testi
 
 This shows the listing for the bucket.
 
-Step 4: Download the bucket: aws --profile testing3 s3 sync s3://level6-cc4c404a8a8b876167f5e70a7d8c9880.flaws.cloud/ddcc78ff/ .
+Step 4: Download the bucket directory: aws --profile testing3 s3 sync s3://level6-cc4c404a8a8b876167f5e70a7d8c9880.flaws.cloud/ddcc78ff/ .
 
-Step 5: Opening the downloaded file shows the next level
+Step 5: Opening the downloaded file inside this directory completes level 5.
 
 ---
 <h3>Level 6 Target: See description below</h3>

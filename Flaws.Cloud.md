@@ -109,7 +109,7 @@ Step 3: Mount this snapshot on our own ec2 instance to see the snapshot data.  T
 
 *Need to guess the correct region until the command works, there aren’t that many US regions so it doesn't take long to guess the correct region.
 
-Next, create an ec2 instance on our user and attach this volume to that ec2. <br>
+Next, create an ec2 instance on our free aws user account and attach this volume to that ec2. <br>
 
 Next, ssh into the ec2 instance we created, run the command 'lsblk' to find the attached volume, and then mount the volume by running: sudo mount /dev/xvda /mnt 
 

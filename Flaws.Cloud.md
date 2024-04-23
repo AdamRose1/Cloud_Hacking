@@ -35,11 +35,14 @@ Step 3: Now that we know that our target is a s3 bucket, let’s check for anony
 aws s3 ls s3:// level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud --no-sign-request <br>
 This time this request returns an ‘Access denied’. 
 
-Step 4: Check for misconfiguration of enabling "Any Authenticated AWS User".<br>
-First create an aws user (can use an aws free account to create this user) and then create access keys for this user.  <br>
-Next, run the command: aws configure --profile testing <br>
-When prompted, enter the access keys. <br>
-Next, run: aws --profile testing s3 ls s3://level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud <br>
+Step 4: Check for a misconfiguration of enabling "Any Authenticated AWS User" to list the bucket.<br>
+To do this we will first need to create an aws user (can use an aws free account to create this user) and then create access keys for this user.  
+
+Once we have an aws user and created access keys, run the command: aws configure --profile testing <br>
+When prompted, enter the access keys.
+
+Next, list the s3 bucket with the user we configured: aws --profile testing s3 ls s3://level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud 
+
 This returns a s3 bucket list.
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/c1289b8f-5caa-4642-b9bf-d97b6f9d88f4)

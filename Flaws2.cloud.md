@@ -39,7 +39,7 @@ Step 1: Visiting the target shows we need credentials to login:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/c0363893-ba65-478f-b322-56d656f43f28)
 
-Step 2: Since we are told that this is an ecr and we are told the name of the ecr, let's check if we can list any images on the ecr: aws --profile flawscloud ecr list-images --repository-name level2
+Step 2: Since we are told that this is an ECR and we are told the name of the ECR, let's check if we can list any images on the ecr: aws --profile flawscloud ecr list-images --repository-name level2
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/4b414d3f-272c-45c6-9efb-3d18eb8fa01d)
 

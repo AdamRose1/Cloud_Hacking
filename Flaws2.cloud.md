@@ -1,4 +1,4 @@
-<h1>All 6 challenges for this lab can be found at http://flaws2.cloud/ </h1>
+<h2>All 3 challenges for this lab can be found at http://flaws2.cloud/ </h2>
 
 <h3>Level 1 Target: http://level1.flaws2.cloud</h3>
 

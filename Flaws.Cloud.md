@@ -170,11 +170,11 @@ Step 5: Now that we have the ARN and the version id, we can see what the actual 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/f6464862-91b5-4249-951e-29c3e8b62650)
 
 This shows that we can use this policy to call "apigateway:GET" on "arn:aws:apigateway:us-west-2::/restapis/*"   <br>
-A quick google search for ‘aws how to invoke api’ shows the information we need:
+A quick google search for ‘aws how to invoke api’ shows the information we need in order to invoke the api:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/23e4b360-ecbc-4cc5-8bd0-5836e8464a7c)
 
-Step 6: At this point we still can’t do much with this information, so we will check if there are any lambda functions associated to this user that are using this api: aws --profile testing4 lambda list-functions
+Step 6: Let's look around what this user has and see if we can find the information need in order to invoke the api.  Check if there are any lambda functions associated to this user that are using this api: aws --profile testing4 lambda list-functions
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/06ce87d5-1105-459a-9f14-85d13ad60dcc)
 

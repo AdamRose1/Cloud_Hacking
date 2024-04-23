@@ -51,7 +51,7 @@ Step 4: aws --profile flawscloud ecr list-images --repository-name level2 --regi
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/650fb84b-33de-4a74-8ddf-b01ba48376db)
 
-Step 5: Step: aws --profile flawscloud ecr batch-get-image --repository-name level2 --registry-id 653711331788 --image-ids imageTag=latest |jq '.images[].imageManifest | fromjson'
+Step 5: aws --profile flawscloud ecr batch-get-image --repository-name level2 --registry-id 653711331788 --image-ids imageTag=latest |jq '.images[].imageManifest | fromjson'
 
 This has a bunch of different digests.  One of the digests in the output is shown in the below screenshot:
 

@@ -165,7 +165,7 @@ Step 4: Check the details for the list_apigateways policy: aws --profile testing
 
 This shows it’s using version 4.  
 
-Step 5: Now that we have the ARN and the version id, you can see what the actual policy is: aws --profile testing4 iam get-policy-version  --policy-arn arn:aws:iam::975426262029:policy/list_apigateways --version-id v4
+Step 5: Now that we have the ARN and the version id, we can see what the actual policy is: aws --profile testing4 iam get-policy-version  --policy-arn arn:aws:iam::975426262029:policy/list_apigateways --version-id v4
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/f6464862-91b5-4249-951e-29c3e8b62650)
 

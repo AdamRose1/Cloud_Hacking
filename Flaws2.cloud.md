@@ -18,8 +18,8 @@ Step 3: Open the profile we just configured for flawscloud (this can be found in
 Step 4: Now that we have credentials for an aws account, let’s check what this level1.flaws2.cloud  is: nslookup level1.flaws2.cloud <br>
 This returns 52.217.139.141
 
-Step 5: Run the command: nslookup 52.217.139.141
-This returns s3-website-us-east-1.amazonaws.com  <br>
+Step 5: Run the command: nslookup 52.217.139.141 <br>
+This returns s3-website-us-east-1.amazonaws.com  
 
 Step 6: Now that we know this is a s3 bucket, let’s try to list the s3 bucket: aws --profile flawscloud s3 ls s3://level1.flaws2.cloud  
 

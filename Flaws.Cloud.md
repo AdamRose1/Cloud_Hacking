@@ -64,7 +64,8 @@ This returns 52.92.242.211
 Step 2: Run nlookup on 52.92.242.211 <br>
 This returns s3-website-us-west-2.amazonaws.com
 
-Step 3: Now that we know that our target is a s3 bucket we can test the misconfigurations in level 1 and level 2.  Test for anonymous access to this bucket by running: <br> aws s3 ls s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud <br>
+Step 3: Now that we know that our target is a s3 bucket we can test the misconfigurations in level 1 and level 2.  Test for anonymous access to this bucket by running: <br> aws s3 ls s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud 
+
 This returns a listing of the s3 bucket:
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/ba82ba6c-5bb6-48ec-824f-c1231691c80d)
@@ -97,7 +98,8 @@ Step 1: Navigating to http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.clou
 
 ![image](https://github.com/AdamRose1/Cloud_Hacking/assets/93153300/b1c2575d-3b3b-4bee-8b14-2c88b39612e6)
 
-Since we are told that the target is an ec2 instance, let’s check if it has any snapshots: aws --profile testing2 ec2 describe-snapshots <br>
+Since we are told that the target is an ec2 instance, let’s check if it has any snapshots: aws --profile testing2 ec2 describe-snapshots
+
 This returned a lot of snapshots, so pipe the output into a file.  
 
 Step 2:  Check for backups with: grep -i backup file.txt <br>

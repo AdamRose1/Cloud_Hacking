@@ -5,7 +5,7 @@ Step 1: nmap -Pn 10.10.10.212 -p- --min-rate=5000|awk -F '/' '/open/ {print $1}'
 
 Output returns open ports 22 and 80.
 
-Step 2: nmap -Pn 10.10.10.212 --min-rate=5000 -p 22,80 -sCV -oN nmap-htb-buckets 
+Step 2: Enumerate these open ports further with nmap: nmap -Pn 10.10.10.212 --min-rate=5000 -p 22,80 -sCV -oN nmap-htb-buckets 
 
 Output returns:
 

@@ -1,6 +1,6 @@
 <h2>AWS lab on HackTheBox called ‘Bucket’</h2>
 
-<h3>Initial Access:</h3><br>
+<h3>Initial Access:</h3>
 Step 1: nmap -Pn 10.10.10.212 -p- --min-rate=5000|awk -F '/' '/open/ {print $1}'
 
 Output returns open ports 22 and 80.

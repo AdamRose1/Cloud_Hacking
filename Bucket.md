@@ -33,7 +33,7 @@ Step 6: List the ‘adserver’ s3 bucket: aws --no-sign-request s3 --endpoint-u
 
 Download ‘index.html’ listed in the bucket: aws s3 --no-sign-request --endpoint-url http://s3.bucket.htb  cp s3://adserver/index.html .
 
-Looking at index.html confirms that this bucket is listing the website http://bucket.htb.  
+Opening index.html confirms that this bucket is listing the website http://bucket.htb.  
 
 Step 7: Check for more information on what we can do on this s3 bucket by running the ‘OPTIONS’ request method on the s3.bucket.htb endpoint:
 

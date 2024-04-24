@@ -49,7 +49,7 @@ Navigate to the uploaded file: http://bucket.htb/test.php?cmd=whoami
 
 Step 9: Open up a netcat listener: nc -lvnp 4444
 
-Next, upload a php webshell using the same command used in step 8.  Then navigate to the uploaded web shell to get a shell as user www-data.
+Step 10: Upload a php webshell using the same command used in step 8.  Then navigate to the uploaded web shell to get a shell as user www-data.
 
 
 

